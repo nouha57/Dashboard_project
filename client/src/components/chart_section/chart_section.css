@@ -1,0 +1,91 @@
+@import '../../css/globals.css';
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-section{
+    overflow-y: auto;
+    width: 100%;
+    border-radius: 32px;
+    margin-bottom: var(--margin-bottom);
+    padding: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.chart-section-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 24px;
+    padding: 0 4px;
+    color: var(--main-color);
+} 
+
+.buttons{
+    width: 23%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    margin: 0;
+}
+.charts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.charts > .chart:first-child, .charts > .chart:nth-child(3){
+    width: 50%;
+}
+
+.charts span{
+    width: 16px;
+    height: 16px;
+}
+.highcharts-root{
+    width: auto;
+    border-radius: 20px;
+}
+.highcharts-background{
+    fill: var(--projects-section);
+    opacity: .5;
+}
+.highcharts-title{
+    font-weight: 700;
+    opacity: .9;
+    fill: var(--main-color)  !important;
+}
+
+.highcharts-yaxis-labels text, .highcharts-xaxis-labels text{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 0;
+    fill: var(--secondary-color) !important;
+    opacity: .7;
+}
+
+.table-section{
+    margin-bottom: var(--margin-bottom);
+    text-align: center;
+    width: 100%;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+    color: var(--main-color);
+}
+
+@media (max-width: 639px) {
+    .charts{
+        flex-direction: column;
+    }
+}
+

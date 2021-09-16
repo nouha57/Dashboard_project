@@ -1,0 +1,20 @@
+.MuiDialogContent-root{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.MuiDialog-paperWidthSm{
+    padding: 24px 36px;
+}
+.MuiMenu-paper{
+    max-height: 300px !important;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.MuiDialogActions-root{
+    margin-top: 16px;
+}

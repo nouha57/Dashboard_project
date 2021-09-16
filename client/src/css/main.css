@@ -1,0 +1,35 @@
+@import './globals.css';
+
+.App{
+    min-height: calc(100vh - var(--margin-bottom) );
+    width: 100%;
+}
+
+.App-Body{
+    width: 100%;
+}
+.content{
+    position: relative;
+    min-height: calc(100vh - var(--margin-bottom) );
+    margin-right: 16px;
+    margin-left: 80px;
+    margin-top: var(--margin-bottom);
+    transition: .3s ease;
+}
+
+.content.close{
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+}
+
+.ChartPage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.ChartPage span{
+    height: 20px;
+}

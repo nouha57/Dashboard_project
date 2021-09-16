@@ -1,0 +1,71 @@
+@import '../../css/globals.css';
+
+#input-file{
+    display: none;
+}
+
+.full_button{
+    display: flex;
+    align-items: center;
+}
+
+
+.add-btn {
+    color: var(--projects-section);
+    background-color: var(--main-color);
+    padding: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--button-shadow);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.add-btn.selected{
+    display: none;
+}
+
+.add-btn:hover{
+    transform: scale(1.3);
+}
+
+.upload-btn{
+    color: var(--projects-section);
+    background-color: var(--main-color);
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: var(--button-shadow);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.upload-btn span{
+    font-weight: 100;
+    font-size: 10px;
+    max-width: 100px;
+    max-height: 24px;
+    margin: auto;
+    overflow: hidden;              		
+    text-overflow: ellipsis; 
+}
+
+span.space{
+    width: 10px;
+}
+
+.upload-btn.selected{
+    transform: scale(1);
+}
